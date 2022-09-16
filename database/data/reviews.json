@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "image": "/public/images/reviews/review1.png",
+        "name": "Alex Buckmaster",
+        "text": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”"
+    },
+    {
+        "id": 2,
+        "image": "/public/images/reviews/review2.png",
+        "name": "Dennis Callis",
+        "text": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown”"
+    },
+    {
+        "id": 3,
+        "image": "/public/images/reviews/review3.png",
+        "name": "James Hall",
+        "text": "“Lorem Ipsum .”"
+    },
+    {
+        "id": 4,
+        "image": "/public/images/reviews/review4.png",
+        "name": "Autumn Phillips",
+        "text": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown”"
+    },
+    {
+        "id": 5,
+        "image": "/public/images/reviews/review5.png",
+        "name": "Kurt Bates",
+        "text": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”"
+    },
+    {
+        "id": 6,
+        "image": "/public/images/reviews/review6.png",
+        "name": "Kathy Pacheco",
+        "text": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown”"
+    },
+    {
+        "id": 7,
+        "image": "/public/images/reviews/review1.png",
+        "name": "Alex Buckmaster",
+        "text": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”"
+    },
+    {
+        "id": 8,
+        "image": "/public/images/reviews/review2.png",
+        "name": "Dennis Callis",
+        "text": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown”"
+    },
+    {
+        "id": 9,
+        "image": "/public/images/reviews/review3.png",
+        "name": "James Hall",
+        "text": "“Lorem Ipsum .”"
+    },
+    {
+        "id": 10,
+        "image": "/public/images/reviews/review4.png",
+        "name": "Autumn Phillips",
+        "text": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown”"
+    },
+    {
+        "id": 11,
+        "image": "/public/images/reviews/review5.png",
+        "name": "Kurt Bates",
+        "text": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”"
+    },
+    {
+        "id": 12,
+        "image": "/public/images/reviews/review6.png",
+        "name": "Kathy Pacheco",
+        "text": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown”"
+    }
+]

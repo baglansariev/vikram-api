@@ -1,0 +1,61 @@
+version: '3.8'
+
+networks:
+  vikram:
+    driver: bridge
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    container_name: vikram-nginx
+    ports:
+      - "8049:5000"
+    depends_on:
+      - php
+    networks:
+      - vikram
+    volumes:
+      - ./:/app
+      - ./docker/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/nginx/logs:/var/log/nginx
+
+  mysql:
+    image: mysql:5.7
+    container_name: vikram-mysql
+    ports:
+      - "3308:3306"
+    restart: unless-stopped
+    volumes:
+      - ./docker/mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_USER=${DB_USERNAME}
+      - MYSQL_DATABASE=${DB_DATABASE}
+    networks:
+      - vikram
+
+  php:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: vikram-php
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: ${DB_CONNECTION}://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_DATABASE}
+    volumes:
+      - ./:/app
+    networks:
+      - vikram
+
+  composer:
+    image: composer:latest
+    container_name: vikram-composer
+    volumes:
+      - .:/app
+    depends_on:
+      - php
+    networks:
+      - vikram
+    command: composer install --ignore-platform-reqs --no-scripts
