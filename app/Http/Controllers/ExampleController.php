@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\File;
+use Illuminate\Http\Request;
 
 class ExampleController extends Controller
 {
@@ -30,7 +31,7 @@ class ExampleController extends Controller
         return response()->json($categories, 200);
     }
     
-    public function result()
+    public function result(Request $request)
     {
         $categories = json_decode(File::get(base_path('database/data/result.json')), true);
 

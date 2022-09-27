@@ -23,6 +23,6 @@ $router->group(['prefix' => 'api'], function() use($router) {
     $router->group(['middleware' => 'auth'], function() use($router) {
         $router->get('/categories', 'ExampleController@categories');
         $router->get('/reviews', 'ExampleController@reviews');
-        $router->get('/result', 'ExampleController@result');
+        $router->post('/result', 'ExampleController@result');
     });
 });
